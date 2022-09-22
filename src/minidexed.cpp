@@ -387,6 +387,7 @@ void CMiniDexed::ProgramChange (unsigned nProgram, unsigned nTG)
 
 	assert (m_pTG[nTG]);
 	m_pTG[nTG]->loadVoiceParameters (Buffer);
+	// my keyboard crashes on program change
 	//m_SerialMIDI.SendSystemExclusiveVoice(nProgram,0,nTG);
 
 	m_UI.ParameterChanged ();
